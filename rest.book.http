@@ -1,0 +1,39 @@
+### Create
+
+POST http://localhost:3333/book
+Content-Type: application/json
+
+{
+    "name": "Book two",
+    "description": "Este é o segundo livro",
+    "publishingCompany": "CEDUP",
+    "shelf": {
+        "id": "954a56cc-f149-47f3-a93a-4a224b623fda"
+    }
+}
+
+### List By Id
+
+GET http://localhost:3333/book/2e7c6a75-3605-4260-9af1-b410a328d387
+
+### List All
+
+GET http://localhost:3333/book
+
+### Update
+
+PUT http://localhost:3333/book/2e7c6a75-3605-4260-9af1-b410a328d387
+Content-Type: application/json
+
+{
+    "name": "asd",
+    "description": "asd",
+    "publishingCompany": "asd",
+    "shelf": {
+        "id": "aa40f28d-67b3-4c61-a7b4-5e2ae790772a"
+    }
+}
+
+### Delete
+
+DELETE http://localhost:3333/book/2e7c6a75-3605-4260-9af1-b410a328d387

@@ -1,0 +1,32 @@
+### Create
+
+POST http://localhost:3333/library
+Content-Type: application/json
+
+{
+    "name": "Bibliote CEDUP2",
+    "cnpj": "49.642.875/0001-15",
+    "logo": ""
+}
+### List By Id
+
+GET http://localhost:3333/library/a3740947-6efd-41d3-8d10-1e5b8d1ed6ca
+
+### List All
+
+GET http://localhost:3333/library
+
+### Update
+
+PUT http://localhost:3333/library/a3740947-6efd-41d3-8d10-1e5b8d1ed6ca
+Content-Type: application/json
+
+{
+    "name": "Bib 2",
+    "cnpj": "48.719.786/0001-28",
+    "logo": null
+}
+
+### Delete
+
+DELETE http://localhost:3333/library/447bd30b-dcd4-47df-9d2f-4e8ee44227ac

@@ -1,0 +1,41 @@
+### Create
+
+POST http://localhost:3333/shelf
+Content-Type: application/json
+
+{
+    "name": "LIVROS CEDUP",
+    "code": "A2",
+    "library": {
+        "id": "9237c2b9-57f0-4edf-89e0-9d6c2f1faa89"
+    }
+}
+
+
+
+
+### List By Id
+
+GET http://localhost:3333/shelf/954a56cc-f149-47f3-a93a-4a224b623fda
+
+### List All
+
+GET http://localhost:3333/shelf/library/<library_id>
+
+
+### Update
+
+PUT http://localhost:3333/shelf/954a56cc-f149-47f3-a93a-4a224b623fda
+Content-Type: application/json
+
+{
+    "name": "DIVERSOS",
+    "code": "B1",
+    "library": {
+        "id": "9237c2b9-57f0-4edf-89e0-9d6c2f1faa89"
+    }
+}
+
+### Delete
+
+DELETE http://localhost:3333/shelf/7560104a-1273-43d2-98c8-2d1e8b95f260
